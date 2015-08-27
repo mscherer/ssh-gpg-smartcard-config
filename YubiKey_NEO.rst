@@ -45,7 +45,7 @@ Intercept gnome-keyring-daemon and put gpg-agent in place for ssh authentication
 
 A rather tricky part of this configuration is to have a simple wrapper script, called `gpg-agent-wrapper <http://blog.flameeyes.eu/2010/08/smart-cards-and-secret-agents>`_. This script is used with thanks from Diego E. Pettenò::
 
-  wget -O ~/.gnupg/gpg-agent-wrapper https://github.com/herlo/ssh-gpg-smartcard-config/raw/master/gpg-agent-wrapper && chmod +x ~/.gnupg/gpg-agent-wrapper 
+  wget -O ~/.gnupg/gpg-agent-wrapper https://github.com/lfit/ssh-gpg-smartcard-config/raw/master/gpg-agent-wrapper && chmod +x ~/.gnupg/gpg-agent-wrapper 
 
 **NOTE:** The above code has been altered to allow the ``.gpg-agent-info`` to run after SSH_AUTH_SOCK. Please see the CREDITS section below for details.
 
